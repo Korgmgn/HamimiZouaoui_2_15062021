@@ -9,7 +9,6 @@
 body
 {
     font-family: Raleway, sans-serif;
-    width: auto;
 }
 
 *
@@ -38,7 +37,8 @@ header h1
 
 #logo, header, #middle, #bottom, #activites
 {
-    margin-left: 40px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 /*-------------Navigation------------*/
@@ -165,14 +165,63 @@ input[value="Rechercher"]
     text-decoration: none;
 }
 
+/*----------------------------------------Gestion des images section 1--------------------------------------*/
 
+.description1 img
+{
+    max-width:230px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    border-radius: 22px 22px 22px 22px;
+    position: relative;
+}
 
+#auberge_cannebiere
+{
+    position: absolute;
+}
+
+.description2 img
+{
+    max-width:150px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    border-radius: 22px 22px 22px 22px;
+}
+
+.description3 img
+{
+    max-width:200px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+    border-radius: 22px 22px 22px 22px;
+}
+
+.description4 img
+{
+    max-width:150px;
+    max-height:150px;
+    width: auto;
+    height: auto;
+    border-radius: 22px 22px 22px 22px;
+}
+
+.description1, .description2, .description3, .description4
+{
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 22px 22px 22px 22px;
+}
 /*-----------------Section 2---------------*/
 
 #bottom
 {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     /*Ajuster une fois les images ajoutées*/
 }
 
@@ -189,18 +238,29 @@ footer
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #f2f2f2;
-    height: fit-content;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 footer a
 {
     color: black;
+    font-size: 00.7em;
     text-decoration: none;  
 }
 
-footer li
+footer h2
 {
+    font-size: 00.9em;
+    margin-right: 300px;
+}
+
+
+footer ul
+{
+    padding-inline-start: 0%;
+    display: flex;
+    flex-direction: column;
     list-style-type: none;
-    padding-inline-start: initial;
 }
