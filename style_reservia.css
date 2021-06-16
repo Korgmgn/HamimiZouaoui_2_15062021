@@ -1,0 +1,111 @@
+/*Choix de la police*/
+
+@font-face 
+{
+    font-family: 'Raleway';
+    src: url('raleway/static/Raleway-Medium.ttf');
+}
+
+body
+{
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    margin-left: 40px;
+}
+
+*
+{
+    font-size: 1em;
+}
+
+header p
+{
+    font-size: 0.9em;
+    font-style: normal;
+    opacity: 0.8;
+}
+
+#logo img
+{
+    height: 40px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+header h1
+{
+    clear: both;
+}
+
+/*Navigation*/
+
+nav ul
+{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+nav li
+{
+    display: inline-block;
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+nav a
+{
+    text-decoration: none;  
+}
+
+nav a:hover
+{
+    border-top: 2px solid #0065fc;
+    padding-top: 14px; 
+}
+
+
+/* Formulaire*/
+
+input
+{
+    height: 34px;
+    font: inherit;
+    width: 120px;
+}
+
+input[value="Rechercher"]
+{
+    height: 40px;
+    color: white;
+    background-color: #0065fc;
+    border: #0065fc;
+    border-radius: 0 5px 5px 0;
+    width: 100px;
+    margin-left: -5px;
+}
+
+
+/* Filtres */
+
+#filtre, #filtre ul
+{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+#filtre h1
+{
+    font-size: 1.1em;
+}
+
+#filtre a
+{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+/*Ajouter a:hover sur les li*/

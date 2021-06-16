@@ -3,13 +3,12 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="style_reservia.css">
-        <!--Ne pas oublier de lier le .css-->
         <title>Réservia</title>
     </head>
 
     <body>
         
-        <div id="logo"><!--logo réservia--></div>
+        <div id="logo"><img src="images/logo/reservia.png" alt="logo reservia"/><!--logo réservia--></div>
 
         <header>
 
@@ -23,13 +22,13 @@
             </nav>
 
             <h1>Trouvez votre <strong>hébergement</strong> pour des <strong>vacances</strong> de rêve</h1>
-            <h2>En plein <em>centre ville</em> ou en <em>nature</em></h2>
+            <p>En plein <em>centre ville</em> ou en <em>nature</em></p>
 
             <form method="post" action="inexistant.php">
                 <p>
                     <!--Icone géolocalisation + fond avec arrondis-->
-                    <input type="text" name="lieu" id="lieu" placeholder="Ville, Pays">
-                    <label for="lieu">Rechercher</label>                    
+                    <input type="text" name="lieu" id="lieu" value="Ville, Pays">
+                    <input type="submit" value="Rechercher">                  
                 </p>
             </form>
 
@@ -37,14 +36,14 @@
                 <h1>Filtres</h1>
                     <!--Icones des filtres + arrondis + hover-->
                     <ul>
-                        <li>Economique</li>
-                        <li>Familial</li>
-                        <li>Romantique</li>
-                        <li>Animaux autorisés</li>
+                        <li><a href="#">Economique</a></li>
+                        <li><a href="#">Familial</a></li>
+                        <li><a href="#">Romantique</a></li>
+                        <li><a href="#">Animaux autorisés</a></li>
                     </ul>
             </div>
 
-            <h3><!--Icone information-->plus de 500 logements sont disponibles dans cette ville</h3>
+            <p><!--Icone information-->Plus de 500 logements sont disponibles dans cette ville</p>
 
         </header>
 
