@@ -174,12 +174,6 @@ input[value="Rechercher"]
     width: auto;
     height: auto;
     border-radius: 22px 22px 22px 22px;
-    position: relative;
-}
-
-#auberge_cannebiere
-{
-    position: absolute;
 }
 
 .description2 img
