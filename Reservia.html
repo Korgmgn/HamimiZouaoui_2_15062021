@@ -7,13 +7,14 @@
     </head>
 
     <body>
-        
+
+<!--------------------------------Haut de page-------------------------------------------->
+
         <div id="logo"><img src="images/logo/reservia.png" alt="logo reservia"/><!--logo réservia--></div>
 
         <header>
 
             <nav>
-                <!--ligne au dessus de la selection-->
                 <ul>
                     <li><a href="#hebergements">Hébergements</a></li>
                     <li><a href="#activites">Activités</a></li>
@@ -26,15 +27,15 @@
 
             <form method="post" action="inexistant.php">
                 <p>
-                    <!--Icone géolocalisation + fond avec arrondis-->
-                    <input type="text" name="lieu" id="lieu" value="Ville, Pays">
+                    <!--Icone géolocalisation-->
+                    <input type="text" name="lieu" id="lieu" value="Marseille, France">
                     <input type="submit" value="Rechercher">                  
                 </p>
             </form>
 
             <div id="filtre">
                 <h1>Filtres</h1>
-                    <!--Icones des filtres + arrondis + hover-->
+                    <!--Icones des filtres-->
                     <ul>
                         <li><a href="#">Economique</a></li>
                         <li><a href="#">Familial</a></li>
@@ -46,54 +47,59 @@
             <p><!--Icone information-->Plus de 500 logements sont disponibles dans cette ville</p>
 
         </header>
+    
+<!-----------------------------Première section-------------------------------------------->
 
+    <div id="middle">
         <section>
             
             <h1 id="hebergements">Hébergements à Marseille</h1>
             
-            <!--Il faudra peut être inverser id et class pour faciliter le CSS-->
-            <div id="auberge_cannebiere">
-                <div class="description1">
-                    <a href="#">Auberge la Cannebière</a>
-                    <p>Nuit à partir de 25€</p>
+            <div id="contenu_hebergement">
+                <!--Il faudra peut être inverser id et class pour gérer le CSS-->
+                <div id="auberge_cannebiere">
+                    <div class="description1">
+                        <a href="#">Auberge la Cannebière</a>
+                        <p>Nuit à partir de 25€</p>
+                    </div>
                 </div>
-            </div>
 
-            <div id="hotel_port">
-                <div class="description1">
-                    <a href="#">Hôtel du port</a>
-                    <p>Nuit à partir de 52€</p>
+                <div id="hotel_port">
+                    <div class="description1">
+                        <a href="#">Hôtel du port</a>
+                        <p>Nuit à partir de 52€</p>
+                    </div>
                 </div>
-            </div>
 
-            <div id="hotel_mouettes">
-                <div class="description1">
-                    <a href="#">Hôtel Les mouettes</a>
-                    <p>Nuit à partir de 76€</p>
+                <div id="hotel_mouettes">
+                    <div class="description1">
+                        <a href="#">Hôtel Les mouettes</a>
+                        <p>Nuit à partir de 76€</p>
+                    </div>
                 </div>
-            </div>
 
-            <div id="hotel_mer">
-                <div class="description1">
-                    <a href="#">Hôtel de la mer</a>
-                    <p>Nuit à partir de 46€</p>
+                <div id="hotel_mer">
+                    <div class="description1">
+                        <a href="#">Hôtel de la mer</a>
+                        <p>Nuit à partir de 46€</p>
+                    </div>
                 </div>
-            </div>
 
-            <div id="auberge_panier">
-                <div class="description1">
-                    <a href="#">Auberge Le Panier</a>
-                    <p>Nuit à partir de 23€</p>
+                <div id="auberge_panier">
+                    <div class="description1">
+                        <a href="#">Auberge Le Panier</a>
+                        <p>Nuit à partir de 23€</p>
+                    </div>
                 </div>
-            </div>
 
-            <div id="hotel_amina">
-                <div class="description1">
-                    <a href="#">Hôtel chez Amina</a>
-                    <p>Nuit à partir de 96€</p>
+                <div id="hotel_amina">
+                    <div class="description1">
+                        <a href="#">Hôtel chez Amina</a>
+                        <p>Nuit à partir de 96€</p>
+                    </div>
                 </div>
+                <!--Il faudra peut être inverser id et class pour faciliter le CSS-->
             </div>
-            <!--Il faudra peut être inverser id et class pour faciliter le CSS-->
 
             <h2><a href="#">Afficher plus</a></h2>
 
@@ -101,7 +107,7 @@
 
         <aside>
 
-            <h2>Les plus populaires<!--ajouter icone tendance--></h2>
+            <h2>Les plus populaires<!--ajouter icone tendances--></h2>
             
             <!--Il faudra peut être inverser id et class pour faciliter le CSS-->
             <div id="hotel_soleil">
@@ -127,70 +133,82 @@
             <!--Il faudra peut être inverser id et class pour faciliter le CSS-->
 
         </aside>
+    </div>
 
+<!-----------------------------Deuxieme section-------------------------------------------->
         <section>
 
             <h1 id="activites">Activités à Marseille</h1>
 
-            <!--Il faudra peut être inverser id et class pour faciliter le CSS-->
-            <div id="vieux_port">
-                <div class="description3">
-                    <a href="#">Vieux Port</a>
+            <div id="bottom">
+                <!--Il faudra peut être inverser id et class pour faciliter le CSS-->
+                <div id="vieux_port">
+                    <div class="description3">
+                        <a href="#">Vieux Port</a>
+                    </div>
+                </div>
+
+                <div id="fort_pomegues">
+                    <div class="description4">
+                        <a href="#">Fort de Pomègues</a>
+                    </div>
+                </div>
+
+                <div id="iles_frioul">
+                    <div class="description4">
+                        <a href="#">Îles du Frioul</a>
+                    </div>
+                </div>
+
+                <div id="parc_calanques">
+                    <div class="description3">
+                        <a href="#">Parc National des Calanques</a>
+                    </div>
+                </div>
+
+                <div id="notredame_delagarde">
+                    <div class="description4">
+                        <a href="#">Notre-Dame-De-La-Garde</a>
+                    </div>
+                </div>
+
+                <div id="parc_longchamp">
+                    <div class="description4">
+                        <a href="#">Parc Longchamp</a>
+                    </div>
                 </div>
             </div>
-
-            <div id="fort_pomegues">
-                <div class="description4">
-                    <a href="#">Fort de Pomègues</a>
-                </div>
-            </div>
-
-            <div id="iles_frioul">
-                <div class="description4">
-                    <a href="#">Îles du Frioul</a>
-                </div>
-            </div>
-
-            <div id="parc_calanques">
-                <div class="description3">
-                    <a href="#">Parc National des Calanques</a>
-                </div>
-            </div>
-
-            <div id="notredame_delagarde">
-                <div class="description4">
-                    <a href="#">Notre-Dame-De-La-Garde</a>
-                </div>
-            </div>
-
-            <div id="parc_longchamp">
-                <div class="description4">
-                    <a href="#">Parc Longchamp</a>
-                </div>
-            </div>
-
+        
         </section>
+<!-----------------------------Pied de page-------------------------------------------->
 
         <footer>
-            
-            <h2>A propos</h2>
-                <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
-                </ul>
-            
-            <h2>Nos hébergements</h2>
-                <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
-                </ul>
 
-            <h2>Assistance</h2>
-                <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
-                </ul>
+            <div id="a_propos">   
+                <h2>A propos</h2>
+                    
+                    <ul>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+            </div>
+                
+            <div id="nos_hebergements">
+                <h2>Nos hébergements</h2>
+                    <ul>
+                        <li><a href="#">Charte qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+            </div>
+
+            <div id="assitance">
+                <h2>Assistance</h2>
+                    <ul>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+            </div>
 
         </footer>
 
