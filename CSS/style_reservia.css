@@ -1,4 +1,4 @@
-/*---------------Choix de la police--------------*/
+/*---------------Mise en forme générale--------------*/
 
 @font-face 
 {
@@ -23,6 +23,11 @@ header p
     opacity: 0.8;
 }
 
+em
+{
+    font-style: normal;
+}
+
 #logo img
 {
     height: 38px;
@@ -43,17 +48,17 @@ header h1
 
 header
 {
-    max-height: 20%;
+    max-height: 25%;
 }
 
-#middle, #bottom
+#middle, #middle section:last-child
 {
-    max-height: 35%;
+    max-height: 30%;
 }
 
 footer
 {
-    max-height: 10%;
+    max-height: 15%;
 }
 
 /*-------------Navigation------------*/
@@ -109,9 +114,14 @@ input[value="Rechercher"]
     margin-left: -5px;
 }
 
-
+#localisation
+{
+    height: 15px;
+    width: 15px;
+}
 /* --------------Filtres--------------*/
 
+/*Corriger le chevauchement en responsive*/
 #filtre, #filtre ul
 {
     display: flex;
@@ -123,9 +133,14 @@ input[value="Rechercher"]
 
 
 /*Chercher comment intégrer les icones depuis fontawesome*/
+#filtre h1
+{
+    font-size: 00.8em;
+}
+/*Essayer height / width*/
 #filtre a
 {
-    font-size: 0.9em;
+    font-size: 0.8em;
     color:black;
     font-weight: bold;
     text-decoration: none;
@@ -161,7 +176,7 @@ input[value="Rechercher"]
 
 #middle section
 {
-    width: 75%;
+    width: 70%;
     margin-right: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -169,7 +184,7 @@ input[value="Rechercher"]
 
 #middle aside
 {
-    width: 25%;
+    width: 30%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -216,17 +231,18 @@ input[value="Rechercher"]
 
 .description2 img
 {
-    max-width:120px;
-    max-height:120px;
+    max-width: 190px;
+    min-height:160px;
     width: auto;
     height: auto;
+    float: left;
     border-radius: 22px 0px 0px 22px;
 }
 
 .description3 img
 {
-    max-width:200px;
-    max-height:400px;
+    max-width:350px;
+    min-height: 500px;
     width: auto;
     height: auto;
     border-radius: 22px 22px 22px 22px;
@@ -241,21 +257,33 @@ input[value="Rechercher"]
     border-radius: 22px 22px 22px 22px;
 }
 
-.description1, .description2, .description3, .description4
+.description5 img
+{
+    width: 350px;
+    height: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 22px 22px 22px 22px;
+}
+
+.description1, .description2, .description3, .description4, .description5
 {
     background-color: white;
     border: 4px solid white;
     border-radius: 22px 22px 22px 22px;
+    box-shadow: 4px 4px 10px lightgrey;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-right: 15px;
-    margin-left: 15 px;
+    margin-left: 15px;
 }
 
 .description2
 {
-    min-height: 120px;
+    min-height: 190px;
+    min-width: 80%;
 }
+
 /*-----------------Section 2---------------*/
 
 #bottom

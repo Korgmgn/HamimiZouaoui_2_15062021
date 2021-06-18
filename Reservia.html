@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="CSS/style_reservia.css">
+        <script src="https://kit.fontawesome.com/1198df1a5e.js" crossorigin="anonymous"></script>
         <title>Réservia</title>
     </head>
 
@@ -26,11 +27,11 @@
             <p>En plein <em>centre ville</em> ou en <em>nature</em></p>
 
             <form method="post" action="inexistant.php">
-                <p>
-                    <!--Icone géolocalisation-->
+                <span class="form">
+                    <span id="localisation"><i class="fa-solid fa-location-dot"></i></span>
                     <input type="text" name="lieu" id="lieu" value="Marseille, France">
                     <input type="submit" value="Rechercher">                  
-                </p>
+                </span>
             </form>
 
             <div id="filtre">
@@ -176,7 +177,7 @@
                     </a>
                 </div>
 
-                <div class="description4">
+                <div class="description5">
                     <a href="#">
                         <img src="images/activites/4_small/fort_pomegues.jpg" alt="fort_pomegues"/>
                             <div id="fort_pomegues">
