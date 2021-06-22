@@ -8,7 +8,8 @@
 
 body
 {
-    font-family: Raleway, sans-serif
+    font-family: Raleway, sans-serif;
+    margin-top: 30px;
 }
 
 *
@@ -16,11 +17,27 @@ body
     font-size: 1em;
 }
 
-header p
+header h1 + p
 {
-    font-size: 0.8em;
+    font-size: 0.95em;
     font-style: normal;
     opacity: 0.8;
+    margin-top: 10px;
+    margin-bottom: 18px;
+}
+
+header p:last-child
+{
+    font-size: 0.95em;
+    font-style: normal;
+    opacity: 0.8;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+#second_section h1
+{
+    font-size: 1.3em;
 }
 
 em
@@ -30,20 +47,23 @@ em
 
 #logo img
 {
-    height: 38px;
+    height: 45px;
     float: left;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 header h1
 {
     clear: both;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 #logo, header, #middle, #bottom, #activites
 {
-    margin-left: 35px;
-    margin-right: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 header
@@ -53,32 +73,48 @@ header
 
 #middle, #middle section:last-child
 {
-    max-height: 30%;
+    max-height: 35%;
 }
 
 footer
 {
-    max-height: 15%;
+    max-height: 10%;
 }
 
+#info_icon
+{
+    color: #0065fc;
+    border: solid 2px #f2f2f2;
+    padding: 3px 7px 3px 7px;
+    border-radius: 50%;
+    margin-right: 3px;
+    float: left;
+}
 /*-------------Navigation------------*/
+
+#inscription_mobile
+{
+    display: none;
+}
 
 nav ul
 {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
+    margin-right: 40px;
 }
 
 nav li
 {
     display: inline-block;
-    padding-right: 30px;
+    margin-right: 55px;
 }
 
 nav a
 {
-    text-decoration: none;  
+    text-decoration: none;
+    font-size: 0.95em;  
 }
 
 #inscription
@@ -90,18 +126,40 @@ nav a
 {
     color: #0065fc;
     border-top: 2px solid #0065fc;
-    padding-top: 14px; 
+    padding-top: 29px; 
 }
 
 
 /* ------------Formulaire-----------*/
 
+form
+{
+    margin-bottom: 25px;
+}
+
 input
 {
-    height: 34px;
+    height: 36px;
     font: inherit;
     width: 150px;
+    border: solid 1px #f2f2f2;
+    border-left: 5px;
 }
+
+#lieu
+{
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+#map_icon
+{
+    background-color: #f2f2f2;
+    border-radius: 12px 0 0 12px;
+    padding: 10px 14px 11px 16px;
+    margin-right: -3px;
+}
+
 
 input[value="Rechercher"]
 {
@@ -114,12 +172,8 @@ input[value="Rechercher"]
     margin-left: -5px;
 }
 
-#localisation
-{
-    height: 15px;
-    width: 15px;
-}
 /* --------------Filtres--------------*/
+
 
 /*Corriger le chevauchement en responsive*/
 #filtre, #filtre ul
@@ -127,27 +181,47 @@ input[value="Rechercher"]
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-content: stretch;
+    justify-content: flex-start;
     list-style-type: none;
 }
+
+#filtre ul
+{
+    margin-top: 0px;
+    padding-inline-start: 0%;
+}
+
+#filtre li
+{
+    margin-bottom: 18px;
+    margin-top: 12px;
+}
+
+
 
 
 /*Chercher comment intégrer les icones depuis fontawesome*/
 #filtre h1
 {
-    font-size: 00.8em;
+    font-size: 1.1em;
+    margin-right: 40px;
 }
-/*Essayer height / width*/
+
 #filtre a
 {
-    font-size: 0.8em;
+    font-size: 1em;
     color:black;
     font-weight: bold;
     text-decoration: none;
+    height: 32px;
     margin-right: 40px;
-    padding: 8px;
-    padding-left: 30px;
-    border: 3px solid #f2f2f2;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 18px;
+    padding-left: 0px;
+    border-top:  3px solid #f2f2f2;
+    border-bottom:  3px solid #f2f2f2;;
+    border-right:  3px solid #f2f2f2;;
     border-radius: 20px/20px;
 }
 
@@ -157,6 +231,15 @@ input[value="Rechercher"]
     background-color: #deebff;
 }
 
+.icons
+{
+    color: #0065fc;
+    margin-right: 10px;
+    background-color: #deebff;
+    padding: 8px 13px 8px 13px;
+    border: 3px solid #deebff;
+    border-radius: 50%;
+}
 
 /*-----------------Section 1----------------*/
 
@@ -164,30 +247,33 @@ input[value="Rechercher"]
 {
     background-color: #f2f2f2;
     border-radius: 10px 10px 10px 10px;
-    padding: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
 }
 
 #middle
 {
     display: flex;
     flex-direction: row;
-
+    margin-top: 20px;
 }
 
 #middle section
 {
     width: 70%;
     margin-right: 30px;
-    margin-top: 20px;
     margin-bottom: 20px;
 }
 
 #middle aside
 {
     width: 30%;
-    margin-top: 20px;
+    min-width: 380px;
     margin-bottom: 20px;
 }
+
 
 #contenu_hebergement
 {
@@ -196,7 +282,7 @@ input[value="Rechercher"]
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: space-around;
-    margin: 20px;
+    margin: 0px;
 }
 
 #middle a
@@ -205,68 +291,142 @@ input[value="Rechercher"]
     text-decoration: none;
 }
 
-#middle h3
+#middle h1
 {
-    font-size: 00.9em;
+    padding-left: 20px;
+    font-size: 1.4em;
+    margin-bottom: 8px;
+}
+
+#middle h2
+{
+    padding-left: 20px;
+    margin-top: 25px;
+}
+
+#middle section h3
+{
+    font-size: 1em;
     font-weight: bold;
     padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    margin-right: 5px;
 }
+
+aside h2
+{
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+aside h3
+{
+    margin-top: -8px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#trend_icon i
+{
+    color: black;
+    height: 15px;
+}
+
 
 #middle p
 {
-    font-size: 00.8em;
+    font-size: 00.85em;
     padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 8px;
 }
 
-/*----------------------------------------Gestion des images section 1--------------------------------------*/
+#euro
+{
+    font-weight: bold;
+}
+
+#hotel_soleil, #coeur_hotes, #hotel_bleublanc
+{
+    margin-left: 140px;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+.stars
+{
+    color: #f2f2f2;
+    margin-left: 10px;
+}
+
+.stars2
+{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.checked
+{
+    color: #0065fc;
+}
+
+
+/*----------------------------------------Gestion des images--------------------------------------*/
 
 .description1 img
 {
     max-width: 315px;
     max-height: 175px;
-    width: auto;
-    height: auto;
     border-radius: 22px 22px 0px 0px;
 }
 
 .description2 img
 {
-    max-width: 190px;
-    min-height:160px;
-    width: auto;
-    height: auto;
+    height: 135px;
+    width: 130px;
     float: left;
     border-radius: 22px 0px 0px 22px;
 }
 
 .description3 img
 {
-    max-width:350px;
-    min-height: 500px;
-    width: auto;
-    height: auto;
-    border-radius: 22px 22px 22px 22px;
+    width: 305px;
+    height: 390px;
+    border-radius: 22px 22px 0px 0px;
 }
 
 .description4 img
 {
-    max-width:150px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    border-radius: 22px 22px 22px 22px;
+    width: 305px;
+    height: 180px;
+    border-radius: 22px 22px 0px 0px;
 }
 
 .description5 img
 {
-    width: 350px;
-    height: 200px;
-    width: auto;
-    height: auto;
-    border-radius: 22px 22px 22px 22px;
+    width: 305px;
+    height: 110px;
+    border-radius: 22px 22px 0px 0px;
 }
 
-.description1, .description2, .description3, .description4, .description5
+.description6 img
+{
+    width: 305px;
+    height: 140px;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.description7 img
+{
+    width: 305px;
+    height: 150px;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.description1
 {
     background-color: white;
     border: 4px solid white;
@@ -280,8 +440,72 @@ input[value="Rechercher"]
 
 .description2
 {
-    min-height: 190px;
-    min-width: 80%;
+    background-color: white;
+    border: 4px solid white;
+    border-radius: 22px 22px 22px 22px;
+    box-shadow: 4px 4px 10px lightgrey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.description3, .description4, .description5
+{
+    background-color: white;
+    border-radius: 22px 22px 22px 22px;
+    box-shadow: 4px 4px 10px lightgrey;
+    margin-bottom: 40px;
+    margin-right: 40px;
+}
+
+.description6, .description7
+{
+    background-color: white;
+    border-radius: 22px 22px 22px 22px;
+    box-shadow: 4px 4px 10px lightgrey;
+    margin-bottom: 40px;
+}
+
+.description1
+{
+    height: 200px;
+    width: 235px;
+}
+.description2
+{
+    height: 135px;
+    min-width: 345px;
+}
+
+.description3
+{
+    height: 445px;
+    width: 305px;
+}
+
+.description4
+{
+    height: 235px;
+    width: 305px;
+}
+
+.description5
+{
+    height: 165px;
+    width: 305px;
+}
+
+.description6
+{
+    height: 195px;
+    width: 305px;
+}
+
+.description7
+{
+    height: 210px;
+    width: 305px;
 }
 
 /*-----------------Section 2---------------*/
@@ -290,8 +514,20 @@ input[value="Rechercher"]
 {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    /*Ajuster une fois les images ajoutées*/
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+#activities_inbox1, #activites_inbox2
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#bottom h3
+{
+    margin-left: 25px;
 }
 
 #bottom a
@@ -311,6 +547,7 @@ footer
     background-color: #f2f2f2;
     padding-left: 40px;
     padding-top: 20px;
+    width: auto;
 }
 footer a
 {
@@ -332,4 +569,293 @@ footer ul
     display: flex;
     flex-direction: column;
     list-style-type: none;
+}
+
+
+/*--------------Media Queries--------------*/
+
+@media all and (max-device-width: 1024px)
+{
+        
+    #logo, header, #middle, #bottom, #activites
+        {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+    #middle
+        {
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-content: center;
+        }
+
+    #middle section
+        {
+            width: auto;
+            margin-right: 0px;
+        }
+
+    #middle aside
+        {
+            width: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #second_section h1
+        {
+            margin-left: 30px;
+        }
+    #bottom
+        {
+            justify-content: space-around;
+        }
+
+    .description4, .description5
+        {
+            margin-right: 0px;
+        }
+
+        footer h2
+        {
+            font-size: 00.9em;
+            margin-right: 140px;
+        }
+        
+}
+
+
+@media all and (max-device-width: 425px)
+{
+    #logo, header, #middle, #bottom, #activites
+        {
+            margin-left: 0px;
+            margin-right: 0px;
+        }    
+
+    header h1
+        {
+            font-size: 1.5em;
+        }
+/*--------------------------------------Nav responsive-------------------------------*/
+        
+        #inscription
+        {
+            display: none;
+        }
+
+        #inscription_mobile
+        {
+            display: inline;
+            color: #0065fc;
+            height: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #logo
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: flex-end;
+            height: 50px;         
+        }
+        
+        
+        nav ul
+        {
+            padding-left: 0px;
+            margin-right: 0px;
+            font-size: 1.4em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: flex-end;                   
+        }
+
+        nav li
+        {
+            display: inline-block;
+            text-align: center;
+            margin-right: 0px;
+            width: 100%;
+            border-bottom: solid 3px #f2f2f2;
+            padding-bottom: 15px;
+        }
+                
+        
+        .ancre:hover
+        {
+            color: #0065fc;
+            border-top: none;
+            padding-top: none;
+            border-bottom: solid 3px #0065fc;
+            padding-bottom: 15px; 
+        }    
+/*--------------------------------------Form responsive-------------------------------*/
+input
+{
+    height: 50px;
+    width: 200px;
+    border-left: 5px;
+}
+
+#lieu
+{
+    font-size: 1.1em;
+}
+
+#map_icon
+{
+    padding: 19px 21px 16px 21px;
+}
+
+input[value="Rechercher"]
+{
+    display: none;
+}
+/*--------------------------------------Form responsive-------------------------------*/
+    #filtre a
+        {
+            margin-right: 20px;
+        }
+
+
+    #middle section, aside
+        {
+            background-color: #f2f2f2;
+            border-radius: 0px 0px 0px 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 0px;
+            padding-left: 20px;
+        }
+
+        #middle section 
+        {
+            background-color: white;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        #middle aside h2
+        {
+            font-size: 1.5em;
+            margin-left: 0px;
+            padding-left: 5px;
+        }
+
+        #middle h1
+        {
+            margin-left: 20px;
+        }
+
+        #middle h2
+        {
+            font-size: 1.1em;
+            margin-left: 20px;
+        }
+
+        #second_section h1
+        {
+            margin-left: 45px;
+            margin-bottom: 25px;
+        }
+
+        #bottom
+        {
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            width: auto;
+        }
+
+        #bottom h3
+        {
+            font-size: 1.1em;
+            margin-top: 12px;
+        }
+
+        footer
+        {
+            flex-direction: column;
+        }
+
+        footer h2
+        {
+            font-size: 00.9em;
+            margin-right: 0px;
+        }
+
+        .description1 img
+        {
+            height: 115px;
+            width: 325px;
+        }
+
+        .description3 img, .description4 img, .description5 img, .description6 img, .description7 img
+        {
+            height: 135px;
+            width: 325px;
+        }
+
+        .description2
+        {
+            height: 135px;
+            width: 300px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .description1
+        {
+            height: 190px;
+            width: 315px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        .description3, .description4, .description5, .description6, .description7
+        {
+            height: 190px;
+            width: 325px;
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+        
+}
+
+@media all and (max-device-width: 375px)
+{
+
+    #logo, header, #middle, #bottom, #activites
+    {
+        padding-left: 10px;
+    }   
+
+    #middle h1
+    {
+        font-size: 1.4em;
+    }
+
+    #middle h2
+    {
+        margin-left: 15px;
+    }
+
+    #second_section h1
+    {
+        margin-left: 15px;
+    }
+
+
+    footer h2
+    {
+        font-size: 00.9em;
+        margin-right: 0px;
+    }
 }
