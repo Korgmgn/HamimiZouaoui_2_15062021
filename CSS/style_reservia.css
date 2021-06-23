@@ -62,8 +62,8 @@ header h1
 
 #logo, header, #middle, #bottom, #activites
 {
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 35px;
+    margin-right: 35px;
 }
 
 header
@@ -269,8 +269,11 @@ input[value="Rechercher"]
 
 #middle aside
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
     width: 30%;
-    min-width: 380px;
     margin-bottom: 20px;
 }
 
@@ -444,8 +447,8 @@ aside h3
     border: 4px solid white;
     border-radius: 22px 22px 22px 22px;
     box-shadow: 4px 4px 10px lightgrey;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 15px;
     margin-left: 15px;
 }
@@ -581,6 +584,7 @@ footer ul
         {
             margin-left: 10px;
             margin-right: 10px;
+            padding-left: 0px;
         }
         
     #middle
@@ -603,6 +607,8 @@ footer ul
             flex-direction: column;
             justify-content: center;
             align-content: center;
+            padding-left: 20px;
+            padding-right: 20px;
         }
 
         #second_section h1
@@ -738,8 +744,8 @@ input[value="Rechercher"]
         #middle section 
         {
             background-color: white;
-            padding-left: 5px;
-            padding-right: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
         }
 
         #middle aside h2
@@ -752,6 +758,7 @@ input[value="Rechercher"]
         #middle h1
         {
             margin-left: 20px;
+            font-size: 1.5em;
         }
 
         #middle h2
@@ -793,12 +800,14 @@ input[value="Rechercher"]
 
         .description1 img
         {
+            object-fit: cover;
             height: 115px;
             width: 325px;
         }
 
         .description3 img, .description4 img, .description5 img, .description6 img, .description7 img
         {
+            object-fit: cover;
             height: 135px;
             width: 325px;
         }
@@ -806,7 +815,7 @@ input[value="Rechercher"]
         .description2
         {
             height: 135px;
-            width: 300px;
+            min-width: 300px;
             margin-left: 0px;
             margin-right: 0px;
         }
@@ -832,24 +841,20 @@ input[value="Rechercher"]
 @media all and (max-device-width: 375px)
 {
 
-    #logo, header, #middle, #bottom, #activites
-    {
-        padding-left: 10px;
-    }   
-
     #middle h1
     {
-        font-size: 1.4em;
+        padding-left: 0px;
     }
 
     #middle h2
     {
-        margin-left: 15px;
+        margin-left: 20px;
+        padding-left: 0px;
     }
 
     #second_section h1
     {
-        margin-left: 15px;
+        margin-left: 20px;
     }
 
 
@@ -859,3 +864,21 @@ input[value="Rechercher"]
         margin-right: 0px;
     }
 }
+
+@media all and (min-device-width: 1450px)
+{
+    #middle section
+    {
+        width: 60%;
+    }
+    
+    #middle aside
+    {
+        width: 40%;
+    }
+
+    .description1
+    {
+        margin: 30px 80px 50px 80px;
+    }
+}   
