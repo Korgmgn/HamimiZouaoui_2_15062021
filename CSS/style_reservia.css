@@ -107,12 +107,17 @@ nav a
 {
     text-decoration: none;
     font-size: 16px;
-    font-weight: bold;
 }
 
 #inscription
 {
     color: #0065fc;
+    font-weight: bold;
+}
+
+.ancre1, .ancre2
+{
+    color: black;
 }
 
 .ancre1:hover, .ancre2:hover
@@ -153,9 +158,9 @@ input
     margin-right: -3px;
 }
 
-.search_icon
+ .search_button
 {
-    display: none;
+    visibility: hidden;
 }
 
 input[value="Rechercher"]
@@ -227,12 +232,42 @@ input[value="Rechercher"]
     background-color: #deebff;
 }
 
-.icons
+#budget
 {
     color: #0065fc;
     margin-right: 10px;
     background-color: #deebff;
-    padding: 8px 13px 8px 13px;
+    padding: 8px 8px 8px 8px;
+    border: 3px solid #deebff;
+    border-radius: 50%;
+}
+
+#family
+{
+    color: #0065fc;
+    margin-right: 10px;
+    background-color: #deebff;
+    padding: 8px 12px 8px 12px;
+    border: 3px solid #deebff;
+    border-radius: 50%;
+}
+
+#couple
+{
+    color: #0065fc;
+    margin-right: 10px;
+    background-color: #deebff;
+    padding: 8px 9px 8px 9px;
+    border: 3px solid #deebff;
+    border-radius: 50%;
+}
+
+#pets
+{
+    color: #0065fc;
+    margin-right: 10px;
+    background-color: #deebff;
+    padding: 8px 8px 8px 8px;
     border: 3px solid #deebff;
     border-radius: 50%;
 }
@@ -242,10 +277,9 @@ input[value="Rechercher"]
 {
     color: #0065fc;
     border: solid 2px #f2f2f2;
-    padding: 3px 7px 3px 7px;
+    padding: 5px 10px 6px 12px;
     border-radius: 50%;
     margin-right: 3px;
-    float: left;
 }
 
 /*--------------------------------------Section 1--------------------------------------*/
@@ -312,7 +346,7 @@ input[value="Rechercher"]
 {
     font-size: 17px;
     padding-left: 20px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 #middle section h3
@@ -329,7 +363,7 @@ aside h1
 {
     font-size: 23px;
     margin-left: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 aside h2
 {
@@ -346,10 +380,11 @@ aside h3
     margin-right: 5px;
 }
 
-#trend_icon i
+#trend_icon
 {
+    display: none;
     color: black;
-    height: 15px;
+    float: right;
 }
 
 
@@ -373,16 +408,27 @@ aside h3
     font-size: 18px;
 }
 
+.stars i, .stars2 i
+{
+    height: 13px;
+    width: 13px;
+}
+
 .stars
 {
+
     color: #f2f2f2;
     margin-left: 10px;
+    margin-bottom: 3px;
+    font-size: 14px;
 }
 
 .stars2
 {
+    color: #f2f2f2;
     margin-left: 10px;
     margin-top: 30px;
+    font-size: 14px;
 }
 
 .checked
@@ -605,7 +651,12 @@ footer ul
             margin-right: 10px;
             padding-left: 0px;
         }
-        
+    
+    .stars2
+        {
+            vertical-align: bottom;
+        }
+
     #middle
         {
             flex-direction: column-reverse;
@@ -772,10 +823,11 @@ footer ul
         display: none;
     }
 
-    .search_icon
+    .search_button
     {
-        display: inline;
+        visibility: visible;
         height: 55px;
+        color: white;
         background-color: #0065fc;
         border: solid 1px #0065fc;
         border-radius: 15px 15px 15px 15px;
@@ -786,7 +838,7 @@ footer ul
 /*---------------------------------------------------------------------*/
     #filtre a
     {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     header p:last-child
@@ -929,6 +981,7 @@ footer ul
     {
         width: 220px;
     }
+
 
     #middle section h1
     {
