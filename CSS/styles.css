@@ -3,7 +3,7 @@
 @font-face 
 {
     font-family: 'Raleway';
-    src: url("Raleway/static/Raleway-Medium.ttf");
+    src: url("Assets/Raleway/static/Raleway-Medium.ttf");
 }
 
 body
@@ -16,11 +16,15 @@ body
     font-size: 1em;
 }
 
+#main-container
+{
+    max-width: 1440px;
+}
+
 em
 {
     font-style: normal;
 }
-
 
 #logo img
 {
@@ -29,15 +33,13 @@ em
     margin-bottom: 45px;
 }
 
-
 header h1
 {
     clear: both;
-    margin-bottom: 6px;
     font-weight: bold;
     font-size: 18px;
+    margin-bottom: 6px;
 }
-
 
 header h1 + p
 {
@@ -57,9 +59,7 @@ header p:last-child
     margin-bottom: 45px;
 }
 
-
-
-/*----------------------------------------Dimensions------------------------------------------*/
+/*----------------------------------------Dimensions verticales------------------------------------------*/
 #logo, header, #middle, #bottom, #activites
 {
     margin-left: 35px;
@@ -84,7 +84,7 @@ footer
 
 /*------------------------------------------Navigation-----------------------------------------*/
 
-#inscription_mobile
+#inscription-mobile
 {
     display: none;
 }
@@ -100,22 +100,27 @@ nav ul
 nav li
 {
     display: inline-block;
-    margin-right: 55px;
+    margin-right: 35px;
 }
 
 nav a
 {
     text-decoration: none;
     font-size: 16px;
+}
+
+#inscription a
+{
+    color: #0065fc;
     font-weight: bold;
 }
 
-#inscription
+.ancre-1, .ancre-2
 {
-    color: #0065fc;
+    color: black;
 }
 
-.ancre1:hover, .ancre2:hover
+.ancre-1:hover, .ancre-2:hover
 {
     color: #0065fc;
     border-top: 2px solid #0065fc;
@@ -130,22 +135,7 @@ form
     margin-bottom: 25px;
 }
 
-input
-{
-    height: 36px;
-    font: inherit;
-    width: 150px;
-    border: solid 1px #f2f2f2;
-    border-left: 5px;
-}
-
-#lieu
-{
-    padding-left: 15px;
-    font-weight: bold;
-}
-
-#map_icon
+#map-icon
 {
     background-color: #f2f2f2;
     border-radius: 12px 0 0 12px;
@@ -153,20 +143,35 @@ input
     margin-right: -3px;
 }
 
-.search_icon
+input
 {
-    display: none;
+    width: 150px;
+    height: 36px;
+    font: inherit;
+    border: solid 1px #f2f2f2;
+    border-left: 5px;
+}
+
+#lieu
+{
+    font-weight: bold;
+    padding-left: 15px;
 }
 
 input[value="Rechercher"]
 {
+    width: 100px;
     height: 40px;
     color: white;
     background-color: #0065fc;
     border: #0065fc;
     border-radius: 0 12px 12px 0;
-    width: 100px;
     margin-left: -5px;
+}
+
+.search-button
+{
+    visibility: hidden;
 }
 
 /* -----------------------------------------Filtres-----------------------------------------*/
@@ -205,11 +210,11 @@ input[value="Rechercher"]
 
 #filtre a
 {
-    font-size: 18px;
+    height: 32px;
     color:black;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    height: 32px;
     margin-right: 30px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -225,27 +230,57 @@ input[value="Rechercher"]
 #filtre a:hover
 {
     background-color: #deebff;
+    border-color: #deebff;
 }
 
-.icons
+#budget
 {
     color: #0065fc;
-    margin-right: 10px;
     background-color: #deebff;
-    padding: 8px 13px 8px 13px;
     border: 3px solid #deebff;
     border-radius: 50%;
+    margin-right: 10px;
+    padding: 8px 8px 8px 8px;
+}
+
+#family
+{
+    color: #0065fc;
+    background-color: #deebff;
+    border: 3px solid #deebff;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 8px 12px 8px 12px;
+}
+
+#couple
+{
+    color: #0065fc;
+    background-color: #deebff;
+    border: 3px solid #deebff;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 8px 9px 8px 9px;
+}
+
+#pets
+{
+    color: #0065fc;
+    background-color: #deebff;
+    border: 3px solid #deebff;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 8px 8px 8px 8px;
 }
 
 
-#info_icon
+#info-icon
 {
     color: #0065fc;
     border: solid 2px #f2f2f2;
-    padding: 3px 7px 3px 7px;
     border-radius: 50%;
     margin-right: 3px;
-    float: left;
+    padding: 5px 10px 6px 12px;
 }
 
 /*--------------------------------------Section 1--------------------------------------*/
@@ -255,6 +290,13 @@ input[value="Rechercher"]
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+}
+
+#middle section
+{
+    width: 70%;
+    margin-right: 30px;
+    margin-bottom: 20px;
 }
 
 #middle section, aside
@@ -267,13 +309,6 @@ input[value="Rechercher"]
     padding-bottom: 20px;
 }
 
-#middle section
-{
-    width: 70%;
-    margin-right: 30px;
-    margin-bottom: 20px;
-}
-
 #middle aside
 {
     display: flex;
@@ -282,17 +317,6 @@ input[value="Rechercher"]
     align-content: center;
     width: 30%;
     margin-bottom: 20px;
-}
-
-
-#contenu_hebergement
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: space-around;
-    margin: 0px;
 }
 
 #middle a
@@ -312,7 +336,7 @@ input[value="Rechercher"]
 {
     font-size: 17px;
     padding-left: 20px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 #middle section h3
@@ -325,12 +349,46 @@ input[value="Rechercher"]
     margin-right: 5px;
 }
 
+#middle p
+{
+    font-size: 15px;
+    padding-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.euro
+{
+    font-weight: bold;
+}
+
+#contenu-hebergement
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 0px;
+}
+
 aside h1
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 23px;
     margin-left: 16px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
+
+#trend_icon
+{
+    display: none;
+    color: black;
+    float: right;
+}
+
 aside h2
 {
     font-size: 23px;
@@ -346,43 +404,34 @@ aside h3
     margin-right: 5px;
 }
 
-#trend_icon i
+#hotel-soleil, #coeur-hotes, #hotel-bleublanc
 {
-    color: black;
-    height: 15px;
-}
-
-
-#middle p
-{
-    font-size: 15px;
-    padding-left: 10px;
-    margin-top: 0px;
-    margin-bottom: 8px;
-}
-
-#euro
-{
-    font-weight: bold;
-}
-
-#hotel_soleil, #coeur_hotes, #hotel_bleublanc
-{
+    font-size: 18px;
     margin-left: 140px;
     margin-top: 15px;
-    font-size: 18px;
+}
+
+.stars i, .stars-2 i
+{
+    height: 13px;
+    width: 13px;
 }
 
 .stars
 {
+
     color: #f2f2f2;
     margin-left: 10px;
+    margin-bottom: 3px;
+    font-size: 14px;
 }
 
-.stars2
+.stars-2
 {
+    color: #f2f2f2;
     margin-left: 10px;
     margin-top: 30px;
+    font-size: 14px;
 }
 
 .checked
@@ -393,57 +442,57 @@ aside h3
 
 /*----------------------------------------Gestion des images--------------------------------------*/
 
-.description1 img
+.description-1 img
 {
     max-width: 315px;
     max-height: 175px;
     border-radius: 22px 22px 0px 0px;
 }
 
-.description2 img
+.description-2 img
 {
-    height: 135px;
     width: 130px;
+    height: 135px;
     float: left;
     border-radius: 22px 0px 0px 22px;
 }
 
-.description3 img
+.description-3 img
 {
     width: 305px;
     height: 390px;
     border-radius: 22px 22px 0px 0px;
 }
 
-.description4 img
+.description-4 img
 {
     width: 305px;
     height: 180px;
     border-radius: 22px 22px 0px 0px;
 }
 
-.description5 img
+.description-5 img
 {
     width: 305px;
     height: 110px;
     border-radius: 22px 22px 0px 0px;
 }
 
-.description6 img
+.description-6 img
 {
     width: 305px;
     height: 140px;
     border-radius: 22px 22px 0px 0px;
 }
 
-.description7 img
+.description-7 img
 {
     width: 305px;
     height: 150px;
     border-radius: 22px 22px 0px 0px;
 }
 
-.description1
+.description-1
 {
     background-color: white;
     border: 4px solid white;
@@ -455,7 +504,7 @@ aside h3
     margin-left: 15px;
 }
 
-.description2
+.description-2
 {
     background-color: white;
     border: 4px solid white;
@@ -467,7 +516,7 @@ aside h3
     margin-left: 15px;
 }
 
-.description3, .description4, .description5
+.description-3, .description-4, .description-5
 {
     background-color: white;
     border-radius: 22px 22px 22px 22px;
@@ -476,7 +525,7 @@ aside h3
     margin-right: 40px;
 }
 
-.description6, .description7
+.description-6, .description-7
 {
     background-color: white;
     border-radius: 22px 22px 22px 22px;
@@ -484,50 +533,50 @@ aside h3
     margin-bottom: 40px;
 }
 
-.description1
+.description-1
 {
-    height: 200px;
     width: 235px;
+    height: 200px;
 }
-.description2
+.description-2
 {
-    height: 135px;
     min-width: 345px;
+    height: 135px;
 }
 
-.description3
+.description-3
 {
+    width: 305px;
     height: 445px;
-    width: 305px;
 }
 
-.description4
+.description-4
 {
+    width: 305px;
     height: 235px;
-    width: 305px;
 }
 
-.description5
+.description-5
 {
+    width: 305px;
     height: 165px;
-    width: 305px;
 }
 
-.description6
+.description-6
 {
+    width: 305px;
     height: 195px;
-    width: 305px;
 }
 
-.description7
+.description-7
 {
-    height: 210px;
     width: 305px;
+    height: 210px;
 }
 
 /*--------------------------------------Section 2---------------------------------*/
 
-#second_section h1
+#second-section h1
 {
     font-size: 23px;
 }
@@ -536,14 +585,15 @@ aside h3
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-content: space-around;
 }
 
-#activities_inbox1, #activites_inbox2
+#activities-box-1, #activites-box-2
 {
     display: flex;
     flex-direction: column;
+    align-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -566,93 +616,97 @@ footer
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: auto;
     background-color: #f2f2f2;
     padding-left: 40px;
     padding-top: 20px;
-    width: auto;
 }
+
 footer a
 {
     color: black;
-    font-size: 11px;
+    font-size: 12px;
     text-decoration: none;  
 }
 
 footer h2
 {
-    font-size: 14px;
-    margin-right: 300px;
+    font-size: 16px;
 }
 
+footer #a-propos, footer #nos-hebergements, #assitance
+{
+    margin-right: 180px;
+}
 
 footer ul
 {
-    padding-inline-start: 0%;
     display: flex;
     flex-direction: column;
     list-style-type: none;
+    padding-inline-start: 0%;
 }
 
 
 /*------------------------------------Media Queries------------------------------*/
 
-@media all and (max-device-width: 1024px)
+@media all and (max-width: 1260px)
 {
         
     #logo, header, #middle, #bottom, #activites
-        {
-            margin-left: 10px;
-            margin-right: 10px;
-            padding-left: 0px;
-        }
-        
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 0px;
+    }
+    
+    .stars-2
+    {
+        vertical-align: bottom;
+    }
+
     #middle
-        {
-            flex-direction: column-reverse;
-            flex-wrap: wrap-reverse;
-            justify-content: center;
-            align-content: center;
-        }
+    {
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-content: center;
+    }
 
     #middle section
-        {
-            width: auto;
-            margin-right: 0px;
-        }
+    {
+        width: auto;
+        margin-right: 0px;
+    }
 
     #middle aside
-        {
-            width: auto;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+    {
+        width: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-        #second_section h1
-        {
-            margin-left: 30px;
-        }
+    #second-section h1
+    {
+        margin-left: 30px;
+    }
+
     #bottom
-        {
-            justify-content: space-around;
-        }
+    {
+        justify-content: flex-start;
+    }
 
-    .description4, .description5
-        {
-            margin-right: 0px;
-        }
-
-        footer h2
-        {
-            margin-right: 140px;
-        }
-        
+    footer #a-propos, footer #nos-hebergements, #assitance
+    {
+        margin-right: 65px;
+    }        
 }
 
 /*--------------------------------------Smartphones----------------------------*/
-@media all and (max-device-width: 425px)
+@media all and (max-width: 660px)
 {
     #logo, header, #middle, #bottom, #activites
     {
@@ -677,7 +731,7 @@ footer ul
         display: none;
     }
 
-    #inscription_mobile
+    #inscription-mobile
     {
         display: inline-block;
         color: #0065fc;
@@ -717,13 +771,13 @@ footer ul
     {
         display: inline-block;
         text-align: center;
-        margin-right: 0px;
-        border-bottom: solid 3px #f2f2f2;
         width: 100%;
+        border-bottom: solid 3px #f2f2f2;
+        margin-right: 0px;
         padding-bottom: 15px;
     }
 
-    .ancre1
+    .ancre-1
     {
         color: black;
         font-weight: normal;
@@ -731,7 +785,7 @@ footer ul
         padding-right: 35px;
     }
 
-    .ancre2 
+    .ancre-2 
     {
         color: black;
         font-weight: normal;
@@ -739,21 +793,26 @@ footer ul
         padding-right: 75px;
     }
         
-    .ancre1:hover, .ancre2:hover
+    .ancre-1:hover, .ancre-2:hover
     {
         color: #0065fc;
         border-top: none;
-        padding-top: none;
+        padding-top: 0px;
         border-bottom: solid 3px #0065fc;
         padding-bottom: 15px; 
     }    
 
 
 /*--------------------------------------Form responsive-------------------------------*/
+    #map-icon
+    {
+        padding: 19px 21px 16px 21px;
+    }    
+
     input
     {
+        width: 68%;
         height: 50px;
-        width: 260px;
         border-left: 5px;
     }
 
@@ -762,36 +821,33 @@ footer ul
         font-size: 20px;
     }
 
-    #map_icon
-    {
-        padding: 19px 21px 16px 21px;
-    }
-
     input[value="Rechercher"]
     {
         display: none;
     }
 
-    .search_icon
+    .search-button
     {
-        display: inline;
+        visibility: visible;
         height: 55px;
+        color: white;
         background-color: #0065fc;
         border: solid 1px #0065fc;
         border-radius: 15px 15px 15px 15px;
-        padding: 18px 26px 6px 25px;
+        padding: 12px 18px 9px 18px;
         margin-left: -15px;
     }
 
 /*---------------------------------------------------------------------*/
     #filtre a
     {
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     header p:last-child
     {
         padding-right: 10px;
+        line-height: 2em;
     }
     
     #middle section, aside
@@ -826,7 +882,7 @@ footer ul
         margin-left: 25px;
     }
 
-    #second_section h1
+    #second-section h1
     {
         margin-left: 45px;
         margin-bottom: 25px;
@@ -861,47 +917,46 @@ footer ul
         flex-direction: column;
     }
 
-    footer h2
+    footer #a-propos, footer #nos-hebergements, #assitance
     {
-        font-size: 15px;
         margin-right: 0px;
     }
 
 /*----------------------------------Images----------------------------------*/
-    .description1 img
+    .description-1 img
     {
         object-fit: cover;
+        width: 325px;
         height: 115px;
-        width: 325px;
     }
 
-    .description3 img, .description4 img, .description5 img, .description6 img, .description7 img
+    .description-3 img, .description-4 img, .description-5 img, .description-6 img, .description-7 img
     {
         object-fit: cover;
-        height: 135px;
         width: 325px;
+        height: 135px;
     }
 
-    .description2
+    .description-2
     {
-        height: 135px;
         min-width: 300px;
+        height: 135px;
         margin-left: 0px;
         margin-right: 0px;
     }
 
-    .description1
+    .description-1
     {
-        height: 190px;
         width: 315px;
+        height: 190px;
         margin-right: 0px;
         margin-left: 0px;
     }
 
-    .description3, .description4, .description5, .description6, .description7
+    .description-3, .description-4, .description-5, .description-6, .description-7
     {
-        height: 190px;
         width: 325px;
+        height: 190px;
         margin-right: 0px;
         margin-left: 0px;
     }
@@ -910,16 +965,15 @@ footer ul
 /*------------------------------------------------------------------------------*/
 
 
-@media all and (max-device-width: 375px)
+@media all and (max-width: 375px)
 {
-
-    .ancre1
+    .ancre-1
     {
         padding-left: 35px;
         padding-right: 35px;
     }
 
-    .ancre2 
+    .ancre-2 
     {
         padding-left: 55px;
         padding-right: 55px;
@@ -927,7 +981,7 @@ footer ul
 
     input
     {
-        width: 220px;
+        width: 60%;
     }
 
     #middle section h1
@@ -941,41 +995,28 @@ footer ul
         padding-left: 0px;
     }
 
-    #second_section h1
+    #second-section h1
     {
         margin-left: 20px;
     }
-
-
-    footer h2
-    {
-        margin-right: 0px;
-    }
 }
 
-
-
-@media all and (max-device-width: 320px)
+@media all and (max-width: 372px)
 {
 
-    .ancre1
+    .ancre-1
     {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .ancre2 
+    .ancre-2 
     {
         padding-left: 43px;
         padding-right: 43px;
     }
 
-    input
-    {
-        width: 185px;
-    }
-
-    #second_section h1
+    #second-section h1
     {
         margin-left: 0px;
     }
@@ -1007,41 +1048,3 @@ footer ul
         font-size: 16px;
     }
 }
-
-/*----------------------------1440p and above-----------------------------*/
-@media all and (min-device-width: 1795px)
-    {
-        #middle section
-        {
-            width: 70%;
-        }
-        
-        #middle aside
-        {
-            width: 30%;
-        }
-
-        .description1
-        {
-            margin: 30px 60px 40px 60px;
-        }
-    }
-
-
-@media all and (min-device-width: 2350px)
-    {
-        #middle section
-        {
-            width: 60%;
-        }
-        
-        #middle aside
-        {
-            width: 40%;
-        }
-
-        .description1
-        {
-            margin: 30px 90px 50px 90px;
-        }
-    }
