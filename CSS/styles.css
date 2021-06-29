@@ -9,6 +9,7 @@
 body
 {
     font-family: Raleway, sans-serif;
+    margin: 0px;
 }
 
 *
@@ -439,7 +440,6 @@ aside h3
     color: #0065fc;
 }
 
-
 /*----------------------------------------Gestion des images--------------------------------------*/
 
 .description-1 img
@@ -516,21 +516,13 @@ aside h3
     margin-left: 15px;
 }
 
-.description-3, .description-4, .description-5
+.description-3, .description-4, .description-5, .description-6, .description-7
 {
     background-color: white;
     border-radius: 22px 22px 22px 22px;
     box-shadow: 4px 4px 10px lightgrey;
-    margin-bottom: 40px;
-    margin-right: 40px;
-}
-
-.description-6, .description-7
-{
-    background-color: white;
-    border-radius: 22px 22px 22px 22px;
-    box-shadow: 4px 4px 10px lightgrey;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+    margin-right: 35px;
 }
 
 .description-1
@@ -655,8 +647,6 @@ footer ul
         
     #logo, header, #middle, #bottom, #activites
     {
-        margin-left: 10px;
-        margin-right: 10px;
         padding-left: 0px;
     }
     
@@ -706,19 +696,20 @@ footer ul
 }
 
 /*--------------------------------------Smartphones----------------------------*/
-@media all and (max-width: 660px)
+@media all and (max-width: 675px)
 {
     #logo, header, #middle, #bottom, #activites
     {
         margin-left: 0px;
         margin-right: 0px;
     }    
-
-    header
+    
+    #logo, .form, #filtre, header h1, header p
     {
-        margin-left: 0px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
-
+    
     header h1
     {
         font-size: 24px;
@@ -754,8 +745,7 @@ footer ul
         justify-content: space-between;
         align-content: flex-end;
         height: 50px;         
-    }
-        
+    }        
         
     nav ul
     {
@@ -781,8 +771,8 @@ footer ul
     {
         color: black;
         font-weight: normal;
-        padding-left: 55px;
-        padding-right: 35px;
+        padding-left: 35px;
+        padding-right: 55px;
     }
 
     .ancre-2 
@@ -790,7 +780,7 @@ footer ul
         color: black;
         font-weight: normal;
         padding-left: 65px;
-        padding-right: 75px;
+        padding-right: 45px;
     }
         
     .ancre-1:hover, .ancre-2:hover
@@ -809,9 +799,17 @@ footer ul
         padding: 19px 21px 16px 21px;
     }    
 
+    .form 
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 95%;
+    }
+
     input
     {
-        width: 68%;
+        width: 85%;
         height: 50px;
         border-left: 5px;
     }
@@ -850,6 +848,13 @@ footer ul
         line-height: 2em;
     }
     
+    #hebergements, #activites
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
     #middle section, aside
     {
         background-color: #f2f2f2;
@@ -871,20 +876,16 @@ footer ul
         margin-left: 5px;
     }
 
-    #middle section h1
-    {
-        margin-left: 45px
-    }
-
     #middle section h2
     {
         font-size: 18px;
-        margin-left: 25px;
+        padding-left: 0px;
+        margin-left: 18px;
     }
 
     #second-section h1
     {
-        margin-left: 45px;
+        margin-left: 18px;
         margin-bottom: 25px;
     }
     
@@ -916,11 +917,22 @@ footer ul
     {
         flex-direction: column;
     }
+    
+    footer h2
+    {
+        font-size: 17px;
+    }
+
+    footer a 
+    {
+        font-size: 14px;
+    }
 
     footer #a-propos, footer #nos-hebergements, #assitance
     {
         margin-right: 0px;
     }
+
 
 /*----------------------------------Images----------------------------------*/
     .description-1 img
@@ -979,28 +991,6 @@ footer ul
         padding-right: 55px;
     }
 
-    input
-    {
-        width: 60%;
-    }
-
-    #middle section h1
-    {
-        margin-left: 20px;
-    }
-
-    #middle section h2
-    {
-        margin-left: 20px;
-        padding-left: 0px;
-    }
-
-    #second-section h1
-    {
-        margin-left: 20px;
-    }
-}
-
 @media all and (max-width: 372px)
 {
 
@@ -1016,31 +1006,10 @@ footer ul
         padding-right: 43px;
     }
 
-    #second-section h1
-    {
-        margin-left: 0px;
-    }
-
-    aside
+    #middle aside
     {
         padding-left: 0px;
         padding-right: 0px;
-    }
-
-    #middle section h1
-    {
-        font-size: 19px;
-        margin-left: 18px;
-    }
-
-    aside h1
-    {
-        font-size: 19px;
-    }
-
-    #middle h2
-    {
-        margin-left: 10px;
     }
 
     #middle h3
