@@ -617,13 +617,13 @@ footer
 footer a
 {
     color: black;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;  
 }
 
 footer h2
 {
-    font-size: 16px;
+    font-size: 17px;
 }
 
 footer #a-propos, footer #nos-hebergements, #assitance
@@ -918,16 +918,6 @@ footer ul
         flex-direction: column;
     }
     
-    footer h2
-    {
-        font-size: 17px;
-    }
-
-    footer a 
-    {
-        font-size: 14px;
-    }
-
     footer #a-propos, footer #nos-hebergements, #assitance
     {
         margin-right: 0px;
