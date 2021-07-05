@@ -3,7 +3,7 @@
 @font-face 
 {
     font-family: 'Raleway';
-    src: url("Assets/Raleway/static/Raleway-Medium.ttf");
+    src: url("Assets/font/static/Raleway-Medium.ttf");
 }
 
 body
@@ -15,6 +15,7 @@ body
 *
 {
     font-size: 1em;
+    -webkit-font-smoothing: antialiased;
 }
 
 #main-container
@@ -36,8 +37,9 @@ em
 
 header h1
 {
+    font-family: Raleway;
     clear: both;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 18px;
     margin-bottom: 6px;
 }
@@ -46,7 +48,7 @@ header h1 + p
 {
     font-size: 15px;
     font-style: normal;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-top: 10px;
     margin-bottom: 18px;
 }
@@ -55,13 +57,13 @@ header p:last-child
 {
     font-size: 15px;
     font-style: normal;
-    opacity: 0.8;
+    opacity: 0.9;
     margin-top: 20px;
     margin-bottom: 45px;
 }
 
-/*----------------------------------------Dimensions verticales------------------------------------------*/
-#logo, header, #middle, #bottom, #activites
+/*----------------------------------------Dimensions------------------------------------------*/
+#main-container
 {
     margin-left: 35px;
     margin-right: 35px;
@@ -101,13 +103,13 @@ nav ul
 nav li
 {
     display: inline-block;
-    margin-right: 35px;
+    margin-right: 45px;
 }
 
 nav a
 {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 #inscription a
@@ -125,7 +127,7 @@ nav a
 {
     color: #0065fc;
     border-top: 2px solid #0065fc;
-    padding-top: 28px; 
+    padding-top: 29px; 
 }
 
 
@@ -140,15 +142,16 @@ form
 {
     background-color: #f2f2f2;
     border-radius: 12px 0 0 12px;
-    padding: 10px 14px 11px 16px;
+    padding: 12px 19px 13px 16px;
     margin-right: -3px;
 }
 
 input
 {
-    width: 150px;
-    height: 36px;
+    width: 165px;
+    height: 40px;
     font: inherit;
+    font-size: 15px;
     border: solid 1px #f2f2f2;
     border-left: 5px;
 }
@@ -156,13 +159,14 @@ input
 #lieu
 {
     font-weight: bold;
-    padding-left: 15px;
+    padding-left: 14px;
 }
 
 input[value="Rechercher"]
 {
-    width: 100px;
-    height: 40px;
+    width: 110px;
+    height: 43px;
+    font-size: 14px;
     color: white;
     background-color: #0065fc;
     border: #0065fc;
@@ -205,7 +209,7 @@ input[value="Rechercher"]
 
 #filtre h1
 {
-    font-size: 17px;
+    font-size: 15px;
     margin-right: 40px;
 }
 
@@ -213,7 +217,7 @@ input[value="Rechercher"]
 {
     height: 32px;
     color:black;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     text-decoration: none;
     margin-right: 30px;
@@ -280,8 +284,8 @@ input[value="Rechercher"]
     color: #0065fc;
     border: solid 2px #f2f2f2;
     border-radius: 50%;
-    margin-right: 3px;
-    padding: 5px 10px 6px 12px;
+    margin-right: 8px;
+    padding: 2px 7px 2px 8px;
 }
 
 /*--------------------------------------Section 1--------------------------------------*/
@@ -312,12 +316,14 @@ input[value="Rechercher"]
 
 #middle aside
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: center;
     width: 30%;
     margin-bottom: 20px;
+}
+
+#trending
+{
+    display: flex;
+    flex-direction: column;
 }
 
 #middle a
@@ -358,7 +364,7 @@ input[value="Rechercher"]
     margin-bottom: 8px;
 }
 
-.euro
+.price
 {
     font-weight: bold;
 }
@@ -444,13 +450,15 @@ aside h3
 
 .description-1 img
 {
-    max-width: 315px;
-    max-height: 175px;
+    object-fit: cover;
+    width: 235px;
+    height: 120px;
     border-radius: 22px 22px 0px 0px;
 }
 
 .description-2 img
 {
+    object-fit: cover;
     width: 130px;
     height: 135px;
     float: left;
@@ -459,6 +467,7 @@ aside h3
 
 .description-3 img
 {
+    object-fit: cover;
     width: 305px;
     height: 390px;
     border-radius: 22px 22px 0px 0px;
@@ -466,6 +475,7 @@ aside h3
 
 .description-4 img
 {
+    object-fit: cover;
     width: 305px;
     height: 180px;
     border-radius: 22px 22px 0px 0px;
@@ -473,6 +483,7 @@ aside h3
 
 .description-5 img
 {
+    object-fit: cover;
     width: 305px;
     height: 110px;
     border-radius: 22px 22px 0px 0px;
@@ -480,6 +491,7 @@ aside h3
 
 .description-6 img
 {
+    object-fit: cover;
     width: 305px;
     height: 140px;
     border-radius: 22px 22px 0px 0px;
@@ -487,6 +499,7 @@ aside h3
 
 .description-7 img
 {
+    object-fit: cover;
     width: 305px;
     height: 150px;
     border-radius: 22px 22px 0px 0px;
@@ -522,7 +535,6 @@ aside h3
     border-radius: 22px 22px 22px 22px;
     box-shadow: 4px 4px 10px lightgrey;
     margin-bottom: 35px;
-    margin-right: 35px;
 }
 
 .description-1
@@ -532,7 +544,7 @@ aside h3
 }
 .description-2
 {
-    min-width: 345px;
+    width: 345px;
     height: 135px;
 }
 
@@ -577,15 +589,15 @@ aside h3
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-content: space-around;
 }
 
-#activities-box-1, #activites-box-2
+#activities-box-1, #activities-box-2
 {
     display: flex;
     flex-direction: column;
-    align-content: flex-start;
+    align-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -639,10 +651,15 @@ footer ul
     padding-inline-start: 0%;
 }
 
+footer ul li 
+{
+    margin-bottom: 10px;
+}
+
 
 /*------------------------------------Media Queries------------------------------*/
 
-@media all and (max-width: 1260px)
+@media all and (max-width: 1439px)
 {
         
     #logo, header, #middle, #bottom, #activites
@@ -672,21 +689,52 @@ footer ul
     #middle aside
     {
         width: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    #trending
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .description-1 img
+    {
+        object-fit: cover;
+        width: 315px;
+        height: 115px;
+    }
+
+    .description-1
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .description-1
+    {
+        width: 315px;
+        height: 190px;
+    }
+
+    .description-2
+    {
+        width: 25%;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+    {
+        margin-left: initial;
     }
 
     #second-section h1
     {
         margin-left: 30px;
-    }
-
-    #bottom
-    {
-        justify-content: flex-start;
     }
 
     footer #a-propos, footer #nos-hebergements, #assitance
@@ -695,10 +743,33 @@ footer ul
     }        
 }
 
+@media all and (max-width: 1345px)
+{
+
+    .description-3 img, .description-4 img, .description-5 img, .description-6 img, .description-7 img
+    {
+        object-fit: cover;
+        width: 325px;
+        height: 135px;
+    }
+
+    
+
+    .description-3, .description-4, .description-5, .description-6, .description-7
+    {
+        width: 325px;
+        height: 190px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+
+
+}
 /*--------------------------------------Smartphones----------------------------*/
 @media all and (max-width: 675px)
 {
-    #logo, header, #middle, #bottom, #activites
+    #main-container
     {
         margin-left: 0px;
         margin-right: 0px;
@@ -925,43 +996,17 @@ footer ul
 
 
 /*----------------------------------Images----------------------------------*/
-    .description-1 img
-    {
-        object-fit: cover;
-        width: 325px;
-        height: 115px;
-    }
-
-    .description-3 img, .description-4 img, .description-5 img, .description-6 img, .description-7 img
-    {
-        object-fit: cover;
-        width: 325px;
-        height: 135px;
-    }
+    
 
     .description-2
     {
-        min-width: 300px;
+        width: 300px;
         height: 135px;
         margin-left: 0px;
         margin-right: 0px;
     }
 
-    .description-1
-    {
-        width: 315px;
-        height: 190px;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-
-    .description-3, .description-4, .description-5, .description-6, .description-7
-    {
-        width: 325px;
-        height: 190px;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
+    
         
 }
 /*------------------------------------------------------------------------------*/
@@ -971,14 +1016,14 @@ footer ul
 {
     .ancre-1
     {
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .ancre-2 
     {
-        padding-left: 55px;
-        padding-right: 55px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }
 
