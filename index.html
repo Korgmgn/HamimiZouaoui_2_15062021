@@ -12,20 +12,22 @@
 
 <!--                                                Haut de page                                        -->
     <div id="main-container">
-            <div id="logo"><img src="CSS/Assets/images/logo/reservia.png" alt="logo reservia"/><a href="#" id="inscription-mobile">S'inscrire</a></div>
+        <header>
+            <div id="logo-nav">
+                <div id="logo"><img src="CSS/Assets/images/logo/reservia.png" alt="logo reservia"/><a href="#" id="inscription-mobile">S'inscrire</a></div>
 
-            <header>
 
                 <nav>
                     <ul>
-                            <li><a href="#hebergements"  class="ancre-1">Hébergements</a></li>
-                            <li><a href="#activites" class="ancre-2">Activités</a></li>
+                            <li class="ancre-1"><a href="#hebergements">Hébergements</a></li>
+                            <li class="ancre-2"><a href="#activites">Activités</a></li>
                             <li id="inscription"><a href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
+            </div>
 
                 <h1>Trouvez votre <strong>hébergement</strong> pour des <strong>vacances</strong> de rêve</h1>
-                <p>En plein <em>centre ville</em> ou en <em>nature</em></p>
+                <p>En plein <em>centre ville</em> ou en pleine <em>nature</em></p>
 
                 <form method="post" action="inexistant.php">
                     <span class="form">
@@ -42,7 +44,7 @@
                     <h1>Filtres</h1>
                         <!--Icones des filtres-->
                         <ul>
-                            <li><a href="#"><span id="budget"><i class="fas fa-money-bill-wave"></i></span>Economique</a></li>
+                            <li><a href="#"><span id="budget"><i class="fas fa-money-bill-wave"></i></span>Économique</a></li>
                             <li><a href="#"><span id="family"><i class="fas fa-child"></i></span>Familial</a></li>
                             <li><a href="#"><span id="couple"><i class="fas fa-heart"></i></span>Romantique</a></li>
                             <li><a href="#"><span id="pets"><i class="fas fa-dog"></i></span>Animaux autorisés</a></li>
@@ -51,7 +53,7 @@
 
                 <p><span id="info-icon"><i class="fas fa-info"></i></span>Plus de 500 logements sont disponibles dans cette ville</p>
 
-            </header>
+        </header>
         
     <!--                                                       Première section                                                          -->
 
@@ -329,7 +331,6 @@
 <!--                                                                             Pied de page                                                                      -->
 
         <footer>
-
             <div id="a-propos">   
                 <h2>A propos</h2>
                     
@@ -348,16 +349,14 @@
                     </ul>
             </div>
 
-            <div id="assitance">
+            <div id="assistance">
                 <h2>Assistance</h2>
                     <ul>
                         <li><a href="#">Centre d'aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
             </div>
-
         </footer>
 
-     
     </body>
 </html>
