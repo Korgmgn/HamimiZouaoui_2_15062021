@@ -153,12 +153,12 @@ nav a
 
 .ancre-1 a
 {
-    color: #0065fc;
+    color: #0097fc;
 }
 
 .ancre-1.selected-ancre
 {
-    border-top: 2px solid #0065fc;
+    border-top: 2px solid #0097fc;
     padding-top: 36px; 
 }
 
@@ -169,14 +169,14 @@ nav a
 
 .ancre-2:hover a
 {
-    color: #0065fc;
+    color: #0097fc;
 }
 
 
 li.ancre-1:hover, li.ancre-2:hover
 {
-    color: #0065fc;
-    border-top: 2px solid #0065fc;
+    color: #0097fc;
+    border-top: 2px solid #0097fc;
     padding-top: 36px; 
 }
 
@@ -1014,16 +1014,16 @@ footer ul li
         color: #0065fc;
         border-top: none;
         padding-top: 0px;
-        border-bottom: solid 3px #0065fc;
+        border-bottom: solid 3px #0097fc;
         padding-bottom: 15px;
     }
 
     li.ancre-1:hover, li.ancre-2:hover
     {
-        color: #0065fc;
+        color: #0097fc;
         border-top: none;
         padding-top: 0px;
-        border-bottom: solid 3px #0065fc;
+        border-bottom: solid 3px #0097fc;
         padding-bottom: 15px; 
     }    
 
