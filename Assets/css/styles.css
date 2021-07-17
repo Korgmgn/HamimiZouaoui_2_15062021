@@ -47,16 +47,15 @@ em
 }
 
 
-header h1
+h1
 {
     font-family: Raleway;
-    font-size: 23px;
+    font-size: 1.45em;
     margin-bottom: 6px;
 }
 
 header h1 + p
 {
-    font-size: 16px;
     font-style: normal;
     opacity: 0.95;
     margin-top: 10px;
@@ -66,7 +65,6 @@ header h1 + p
 header p:last-child
 {
     display: inline-flex;
-    font-size: 16px;
     font-style: normal;
     opacity: 0.95;
     margin-top: 20px;
@@ -129,15 +127,15 @@ nav ul
 
 nav li
 {
+    width: 135px;
+    text-align: center;
     padding-top: 37px;
-    margin-right: 45px;
 }
 
 nav a
 {
     color: black;
     text-decoration: none;
-    font-size: 15px;
 }
 
 #inscription a
@@ -162,7 +160,7 @@ nav a
     padding-top: 38px;
 }
 
-ancre-2:hover a
+.ancre-2:hover a
 {
     color: #0097fc;
 }
@@ -178,25 +176,29 @@ li.ancre-1:hover, li.ancre-2:hover
 
 /* ------------------------------------------Formulaire----------------------------------------*/
 
-form
+.form
 {
+    display: flex;
     margin-bottom: 25px;
 }
 
 #map-icon
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 49px;
+    width: 50px;
     background-color: #f2f2f2;
     border-radius: 16px 0 0 16px;
-    padding: 17px 20px 14px 20px;
-    margin-right: -3px;
 }
 
 input
 {
     width: 225px;
-    height: 46px;
+    height: 45px;
     font: inherit;
-    font-size: 18px;
+    font-size: 1.1em;
     border: solid 1px #f2f2f2;
     border-left: 5px;
 }
@@ -209,15 +211,16 @@ input
 
 input[value="Rechercher"]
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 140px;
-    height: 50px;
-    font-size: 18px;
+    height: 49px;
+    font-size: 1.1em;
     color: white;
     background-color: #0065fc;
     border: #0065fc;
     border-radius: 0 16px 16px 0;
-    margin-left: -5px;
-    padding: 1px 0 1px 0;
 }
 
 .search-button
@@ -253,16 +256,16 @@ input[value="Rechercher"]
 /*Corriger le problème d'affichage des icônes*/
 
 
-#filtre h1
+#filtre h2
 {
-    font-size: 17px;
+    font-size: 1.1em;
     margin-right: 40px;
 }
 
 #filtre a
 {
     color:black;
-    font-size: 17px;
+    font-size: 1.1em;
     font-weight: bold;
     text-decoration: none;
     margin-right: 30px;
@@ -370,18 +373,6 @@ input[value="Rechercher"]
     margin-bottom: 20px;
 }
 
-#trending
-{
-    display: flex;
-    flex-direction: column;
-}
-
-#trending p
-{
-    font-size: 15px;
-    margin-top: 0px;
-    margin-bottom: 8px;
-}
 #middle a
 {
     color: black;
@@ -390,29 +381,28 @@ input[value="Rechercher"]
 
 #hebergements
 {
-    font-size: 23px;
+    font-size: 1.35em;
     margin-bottom: 8px;
     margin-left: 18px;
 }
 
-#middle h2
+#middle h2:last-child
 {
-    font-size: 17px;
-    padding-left: 20px;
+    font-size: 1.1em;
+    margin-left: 15px;
     margin-top: 30px;
 }
 
 #middle section h3
 {
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 1.08em;
     padding-left: 10px;
     margin: 5px 5px 5px 0;
 }
 
 #middle section p
 {
-    font-size: 15px;
+    font-size: 0.98em;
     margin: 0 0 8px 10px;
 }
 
@@ -431,13 +421,21 @@ input[value="Rechercher"]
     margin: 0px;
 }
 
-aside h1
+#trending
+{
+    display: flex;
+    flex-direction: column;
+}
+
+aside h2
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-size: 23px;
-    margin-left: 16px;
+    width: 90%;
+    font-size: 1.35em;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5px;
 }
 
@@ -447,18 +445,19 @@ aside h1
     color: black;
 }
 
-aside h2
-{
-    font-size: 23px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
 aside h3
 {
-    margin-top: -8px;
-    margin-bottom: 10px;
+    font-size: 1.08em;
+    margin-top: 0px;
+    margin-bottom: 5px;
     margin-right: 5px;
+}
+
+aside p
+{
+    font-size: 0.93em;
+    margin-top: 0px;
+    margin-bottom: 8px;
 }
 
 #hotel-soleil, #coeur-hotes, #hotel-bleublanc
@@ -466,7 +465,6 @@ aside h3
     height: 115px;
     display: flex;
     flex-direction: column;
-    font-size: 18px;
     margin-left: 140px;
     margin-top: 15px;
 }
@@ -628,9 +626,9 @@ aside h3
 
 /*--------------------------------------Section 2---------------------------------*/
 
-#second-section h1
+#activites
 {
-    font-size: 23px;
+    font-size: 1.35em;
     margin-left: 40px;
 }
 
@@ -640,6 +638,7 @@ aside h3
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
+    margin-bottom: 25px;
 }
 
 #activities-box-1, #activities-box-2
@@ -673,9 +672,10 @@ footer
     max-width: 1440px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: auto;
     padding-top: 25px;
-    padding-left: 45px;
+    padding-left: 25px;
 }
 
 #a-propos, #nos-hebergements, #assistance
@@ -683,16 +683,16 @@ footer
     width: 32%;
 }
 
+footer h2
+{
+    font-size: 1.1em;
+}
+
 footer a
 {
     color: black;
-    font-size: 15px;
+    font-size: 0.95em;
     text-decoration: none;  
-}
-
-footer h2
-{
-    font-size: 17px;
 }
 
 footer ul
@@ -747,9 +747,16 @@ footer ul li
         margin-bottom: 15px;
     }
 
-/*                                      Texte                                    */
-    aside h1
+    #footer_main-container
     {
+        justify-content: flex-start;
+        padding-left: 45px;
+    }
+
+/*                                      Texte                                    */
+    aside h2
+    {
+        width: 97%;
         margin-bottom: 20px;
     }
 
@@ -852,7 +859,7 @@ footer ul li
     }
 
 /*                              Texte                                    */
-    #filtre h1
+    #filtre h2
     {
         margin-right: 15px;
     }
@@ -896,7 +903,7 @@ footer ul li
         margin-top: 0px;
     }    
     
-    #logo, .form, #filtre, header h1, header p
+    #logo, .form, #filtre, h1, header p
     {
         margin-left: 15px;
         margin-right: 15px;
@@ -911,23 +918,20 @@ footer ul li
 
 /*                              Texte                                    */
 
-    header h1
+    h1
     {
-        font-size: 24px;
         margin-top: 15px;
     }
 
     header h1 + p
 
     {
-        font-size: 16px;
         margin-top: 15px;
         margin-bottom: 35px;
     }
 
     header p:last-child
     {
-        font-size: 16px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -1016,11 +1020,6 @@ footer ul li
         font-weight: normal;
     }
 
-    nav a 
-    {
-        font-size: 17px;
-    }
-
 /*                              Images                                    */   
     #logo img
     {
@@ -1029,20 +1028,21 @@ footer ul li
     }
 
 /*--------------------------------------Form responsive-------------------------------*/
-    #map-icon
-    {
-        padding: 19px 21px 16px 21px;
-    }    
-
     .form 
     {
         display: flex;
         flex-direction: row;
     }
 
+    #map-icon
+    {
+        height: 54px;
+        width: 70px;
+    }
+
     input
     {
-        width: 100%;
+        width: 105%;
         height: 50px;
         border-left: 5px;
     }
@@ -1059,15 +1059,19 @@ footer ul li
 
     .search-button
     {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         visibility: visible;
+        position: relative;
+        right: 10px;
         height: 55px;
+        width: 70px;
         color: white;
         background-color: #0065fc;
         border: solid 1px #0065fc;
         border-radius: 15px 15px 15px 15px;
-        padding: 12px 18px 9px 18px;
-        margin-left: -15px;
-    }
+        }
 
 /*---------------------------------------------------------------------*/
 
@@ -1077,7 +1081,6 @@ footer ul li
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        margin-left: 20px;
     }
 
     #middle section
@@ -1106,7 +1109,7 @@ footer ul li
     }
 
 /*                              Texte                                    */
-    #filtre h1
+    #filtre h2
     {
         margin-left: 10px;
     }
@@ -1121,22 +1124,9 @@ footer ul li
         text-align: left;
     }
 
-    aside h1
+    #activites
     {
-        font-size: 23px;
-        margin-left: 5px;
-    }
-
-    #middle section h2
-    {
-        font-size: 18px;
-        padding-left: 0px;
-        margin-left: 18px;
-    }
-
-    #second-section h1
-    {
-        margin-left: 18px;
+        margin-left: 15px;
         margin-bottom: 25px;
     }
     
@@ -1184,6 +1174,16 @@ footer ul li
 {
 
 /*                             Gestion des blocs                        */
+    #filtre h2
+    {
+        margin-left: 5px;
+    }
+
+    aside h2
+    {
+        width: 92%;
+    }    
+
     aside
     {
         padding-left: 2px;
@@ -1196,13 +1196,7 @@ footer ul li
     }
 
 /*                              Texte                                    */
-
-    aside h1
-    {
-        padding-right: 5px;
-    }
-
-    #second-section h1, #middle section h1
+    #activites, #hebergements
     {
         margin-left: 15px;
     }
@@ -1239,7 +1233,6 @@ footer ul li
     {
         width: 92%;
     }
-
 
     .description-3 img, .description-4 img, .description-5 img, .description-6 img, .description-7 img {
         object-fit: cover;
