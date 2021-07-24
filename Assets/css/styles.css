@@ -72,6 +72,10 @@ header p:last-child
     align-items: center;
 }
 
+ul
+{
+    padding-left: 0px;
+}
 /*----------------------------------------Dimensions------------------------------------------*/
 header, #middle, #bottom
 {
@@ -243,7 +247,6 @@ input[value="Rechercher"]
 #filtre ul
 {
     margin-top: 0px;
-    padding-inline-start: 0px;
 }
 
 #filtre li
@@ -1036,8 +1039,8 @@ footer ul li
 
     #map-icon
     {
-        height: 54px;
-        width: 70px;
+        min-height: 54px;
+        min-width: 54px;
     }
 
     input
@@ -1065,8 +1068,8 @@ footer ul li
         visibility: visible;
         position: relative;
         right: 10px;
-        height: 55px;
-        width: 70px;
+        min-height: 55px;
+        min-width: 55px;
         color: white;
         background-color: #0065fc;
         border: solid 1px #0065fc;
