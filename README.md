@@ -1,4 +1,7 @@
+Premier projet en HTML / CSS
+
 Intégration des maquettes suivantes, pour desktop et mobile (Format tablette libre)
+
 
 <img src="Assets/images/maquettes/desktop.png">
 
